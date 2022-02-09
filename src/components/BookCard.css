@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-inline: auto;
+  margin-top: 10px;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.6rem;
+  border: 1px solid #eaeaea;
+  margin-inline: auto;
+}
+
+.book img {
+  width: 150px;
+  height: 180px;
+  margin-inline: auto;
+}
+.book-description {
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+}
+.author-list {
+  display: flex;
+  font-style: italic;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.book-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  align-self: flex-end;
+}
+
+.btn-primary {
+  background-color: rgb(20, 168, 27);
+}
+
+.btn-danger {
+  background-color: salmon;
+}
+
+.book-buy {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
