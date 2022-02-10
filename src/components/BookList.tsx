@@ -14,15 +14,7 @@ const BookList = () => {
   return (
     <div className="container">
       {books.map((book: IBook) => (
-        <BookCard
-          key={book.id}
-          id={book.id}
-          thumbnailUrl={book.thumbnailUrl}
-          title={book.title}
-          authors={book.authors}
-          shortDescription={book.shortDescription}
-          price={book.price}
-        />
+        <BookCard {...book} />
       ))}
     </div>
   );

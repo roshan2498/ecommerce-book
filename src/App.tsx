@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MyOrder } from "./components/MyOrder";
 import { Cart } from "./components/Cart";
-import SingleBook from "./components/SingleBook";
+import BookDetail from "./components/BookDetail";
 function App() {
   return (
     <div className="App">
@@ -15,8 +15,8 @@ function App() {
           <Route path="/" element={<BookList />} />
           <Route path="/orders" element={<MyOrder />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/book/:id" element={<SingleBook />} />
-          <Route path="*" element={<h1>Not Found!</h1>} />
+          <Route path="/book/:id" element={<BookDetail />} />
+          <Route path="*" element={<h1 className="not-found">Not Found!</h1>} />
         </Routes>
       </BrowserRouter>
     </div>

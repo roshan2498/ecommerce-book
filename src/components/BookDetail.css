@@ -1,0 +1,24 @@
+.book-detail {
+  width: 80%;
+  display: flex;
+  margin: 2rem;
+  margin-inline: auto;
+}
+
+.row {
+  padding: 10px;
+}
+
+.book-detail img {
+  width: 300px;
+  margin-inline: auto;
+}
+
+.btn-detail {
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
