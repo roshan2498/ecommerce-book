@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import axios from "axios";
 import BookCard from "./BookCard";
 import "./BookCard.css";
-
+import { useDispatch, useSelector } from "react-redux";
+import { getBooks } from "../redux/ducks/product";
 const BookList = () => {
-  const [books, setBooks]: any = React.useState([]);
+  const dispatch = useDispatch();
+  const product = useSelector((state: any) => state.product);
+  const { books } = product;
   useEffect(() => {
-    axios
-      .get<any>("http://localhost:3000/books")
-      .then((res) => setBooks(res.data));
+    dispatch(getBooks());
   }, []);
 
   return (

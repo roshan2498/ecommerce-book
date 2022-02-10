@@ -1,10 +1,4 @@
 {
-  "users": [
-    {
-      "username": "admin",
-      "password": "admin"
-    }
-  ],
   "books": [
     {
       "id": 1,
@@ -798,16 +792,6 @@
       "authors": ["Robert Cooper", "Charles Collins"],
       "categories": ["Web Development"],
       "price": 18.62
-    }
-  ],
-  "orders": [],
-  "shippngAddress": [
-    {
-      "id": 1,
-      "fullName": "Narendra Modi",
-      "address": "786 Ram mandir, Ayodhya",
-      "state": "Uttar Pradesh",
-      "pincode": "224123"
     }
   ]
 }

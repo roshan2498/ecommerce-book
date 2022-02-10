@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Cart = () => {
-  const [cart, setCart] = useState<IBook[] | undefined>([]);
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state: any) => state.cart.cartItems);
 
-  const addToCart = (book: IBook): void => {
-    if (cart) {
-      setCart([...cart, book]);
-    } else {
-      setCart([book]);
-    }
-  };
   return (
     <div>
       <h1>Cart</h1>
+      {console.log(cartItems)}
     </div>
   );
 };
